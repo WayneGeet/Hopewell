@@ -43,8 +43,8 @@ watch(showNav, () => {
     console.log("show nav", showNav.value)
 })
 const navItems = ref <NavItem[]>([
-    {name:"Home", link:"#"},
-    {name: "About Us", link:"#"},
+    {name:"Home", link:"/"},
+    {name: "About Us", link:"/about"},
     {name: "Blogs", link:"#"},
     {name: "Contact", link:"#"},
     {name: "Events", link:"#"}
