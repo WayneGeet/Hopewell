@@ -1,29 +1,31 @@
 <template>
   <div>
-    <Header/>
+    <!-- <Header/> -->
     <main>
-      <section class="padding-block-large section-1" >
+      <section class="py-20 section-1" >
         <div class="container">
-          <div class="even-columns hero">
-            <div class="flow">
+          <div class=" flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-16">
+            <div class="flow px-10">
               <h1 class="fs-primary-heading fw-bold">
                 A Second Chance for Young Mothers, A Brighter Future for All
               </h1>
-              <p class="">We believe every young mother deserves a second chance to achieve her dreams. Together, we can break the cycle of poverty and build a future filled with opportunities.</p>
-              <button class="button">Donate</button>
+              <p class="inline-block md:w-[86%]">We believe every young mother deserves a second chance to achieve her dreams. Together, we can break the cycle of poverty 
+                and build a future filled with opportunities.</p>
+              <button class="inline-block w-full bg-orange-500 text-white font-semibold
+               cursor-pointer rounded-full py-2 md:inline md:w-fit md:px-7 ">Donate</button>
             </div>
             
-            <div class="hero-right-side">
-              <div class="hero-img-container hero-img-container-2">
-                <img class="hero-img" src="~/assets/images/teen-girl-2.jpg" alt="teenage mother with her child">
+            <div class="relative flex justify-center">
+              <div class="w-[19rem] h-[19rem] overflow-hidden rounded-full  md:w-[22rem] md:h-[22rem]">
+                <img class="w-full h-full object-cover md:object-[50%_100%] md:max-w-full md:h-full md:rounded-full" src="~/assets/images/black_mother.jpg" alt="teenage mother with her child">
               </div>
-              <div class="hero-img-container hero-img-container-1">
-                <img class="hero-img" src="~/assets/images/child-1.jpg" alt="child">
+              <div class="absolute w-[10rem] h-[10rem] overflow-hidden rounded-full -bottom-10 left-24 md:max-w-[20rem] md:max-h-[20rem] md:-top-5 md:left-[10%] ">
+                <img class="w-full h-full object-cover md:object-center md:max-w-full md:w-[10rem] md:h-[10rem]" src="~/assets/images/child-1.jpg" alt="child">
               </div>
               
-              <div class="hero-info">
-                <span class="num">30+</span>
-                <span class="text">Teen Mothers Recruited</span>
+              <div class="absolute bg-white rounded-xl grid text-center px-2 py-3 text-sm left-[60%] md:top-[60%] md:-left-[5%]  md:px-4 md:py-5 md:text-base md:font-medium">
+                <span class="text-base font-bold">30+</span>
+                <span class="">Teen Mothers Recruited</span>
               </div>
             </div>
 
@@ -37,9 +39,10 @@
               <ul role="list" aria-label="Core Values" class="core-values-list">
                 <li class="visions">
                   <h2 class="text-xl">Our Core Values</h2>
-                  <p class="text-sm">At Hopewell Haven Centre, our core values guide everything we do. They reflect our commitment to making a positive impact in the lives of young mothers and their children.</p>
+                  <p class="text-sm">At Hopewell Haven Centre, our core values guide everything we do. They reflect our commitment to making a positive impact in the lives 
+                    of young mothers and their children.</p>
                 </li>
-                <li v-for="(value, index) in coreValues" :key="index" class="core-value-item">
+                <li v-for="(value, index) in coreValues" :key="index" class="core-value-item auto-cols-fr">
                   <img :src="value.icon" alt="" class="mx-auto w-8 h-8 mb-2" />
                   <h3 class="text-base font-semibold">{{ value.value }}</h3>
                   <p class=" text-sm">{{ value.info }}</p>
@@ -52,19 +55,45 @@
       <section class="padding-block-large">
         <div class="container">
           <div class="even-columns">
-            <div class="section-2-right-container">
-              <div class="section-2-image-container-2"><img class="section-2-image-2" src="~/assets/images/teen-girl.jpg" alt=""></div>
-              <div class="section-2-image-container-1"><img class="section-2-image-1" src="~/assets/images/baby.jpg" alt=""></div>
-              <!-- <div><img src="~/assets/images/circle-3-quarters-quarter-flip.svg" alt=""></div> -->
+            <div class="relative ">
+              <div class="flex flex-col items-end">
+                <img class="max-w-full w-40 h-40" src="~/assets/images/circle.svg" alt="blob">
+                <img class="w-[20rem] h-[29rem] max-w-full object-cover object-[100%_90%] relative -top-24" src="~/assets/images/baby.jpg" alt="">
+
+              </div>
+              
+              <img class="absolute max-w-full w-40 h-40 bottom-[38%] left-[20%] translate-1/2" src="~/assets/images/circle.svg" alt="blob">
+              <div class="absolute top-0 bg-white p-3">
+                <img class="max-w-full w-[18rem] h-[18rem] object-[100%_30%] object-cover" src="~/assets/images/teen-girl.jpg" alt="">
+              </div>
             </div>
             <div class="flow">
-              <h2 class="fs-secondary-heading fw-bold">You're the hope of others</h2>
+              <h2 class="text-4xl font-semibold">You're the hope of others</h2>
               <p data-width="wide">
-                HOPEWELL HAVEN CENTRE is a non-governmental organization improving lives across five counties in Kenya—Nakuru, Narok, Laikipia, Nyandarua, and Kericho. We address interconnected social challenges through programs in education, health, human rights, disability inclusion, and poverty alleviation.
+                HOPEWELL HAVEN CENTRE is a non-governmental organization improving lives across five counties in Kenya—Nakuru, Narok, Laikipia, Nyandarua, and Kericho. 
+                We address interconnected social challenges through programs in education, health, human rights, disability inclusion, and poverty alleviation.
               </p>
-              <div class="">
-                <div class="mision"></div>
-                <div class="vision"></div>
+              <div class="flex items-start gap-4">
+                <div class="flex items-start gap-5">
+                  <div class="">
+                    <div class="flex items-center">
+                      <img class="w-10 h-10" src="~/assets/images/mission.png" alt="target">
+                      <h3 class="font-semibold">Our Missions</h3>
+
+                    </div>
+                    <p>To empower vulnerable populations by improving access to quality education, healthcare, and economic opportunities, while advocating for their rights and fostering community
+                       partnerships to ensure holistic development.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-5">
+                  <div class="">
+                    <div class="flex items-center">
+                      <img class="w-10 h-10" src="~/assets/images/vision.png" alt="target">
+                      <h3 class="font-semibold">Our Vision</h3>
+                    </div>
+                    <p>A community where every person, regardless of their background, can achieve their full potential through equitable access to essential services and opportunities.</p>
+                  </div>
+                </div>
               </div>
               <button class="button">Support Us</button>
             </div>
@@ -105,7 +134,8 @@
           <div class="">
             <div class="flex items-start gap-4">
               <h4 class="text-2xl font-semibold ">Subscribe</h4>  
-              <p class="in-block">Joins our journey of supporting teen mothers with care, opportunity, and hope. Get monthly updates, inspiring stories, and ways to make a difference</p>
+              <p class="in-block">Joins our journey of supporting teen mothers with care, opportunity, and hope. Get monthly updates, inspiring stories,
+                 and ways to make a difference</p>
             </div>
           </div>
 
@@ -170,6 +200,8 @@ import inclusivity from '@/assets/images/inclusivity.png'
 import sustainability from '@/assets/images/sustainability.png'
 import collaboration from '@/assets/images/collaboration.png'
 import respect from '@/assets/images/respect.png'
+
+
 // import Icon
 interface CoreValue {
   value: string
@@ -190,7 +222,8 @@ const coreValues = ref<CoreValue[]>([
 const faqs = ref([
   {
     question: "When was Haven Hands initiated?",
-    answer: "Haven Hands was founded in 2019 with the mission to support, empower, and uplift teen mothers through education, healthcare, and mentorship."
+    answer: `Haven Hands was founded in July of 2023 with the mission to support, empower, and uplift teen mothers through education, healthcare, and mentorship. 
+    It was founded by Gladys Wamuyu, who has served as a project director at Child of Destiny for more than 20 years, changing and impacting lives.`
   },
   {
     question: "What services does Haven Hands provide to teen mothers?",

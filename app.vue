@@ -12,6 +12,8 @@ const customTheme = {
 
 <template>
   <a-config-provider :theme="customTheme">
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </a-config-provider>
 </template>

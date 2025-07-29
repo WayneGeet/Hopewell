@@ -45,9 +45,9 @@ watch(showNav, () => {
 const navItems = ref <NavItem[]>([
     {name:"Home", link:"/"},
     {name: "About Us", link:"/about"},
-    {name: "Blogs", link:"#"},
-    {name: "Contact", link:"#"},
-    {name: "Events", link:"#"}
+    {name: "Blogs", link:"/blogs"},
+    {name: "Contact", link:"/contact"},
+    {name: "Events", link:"/events"}
 ]);
 
 </script>
