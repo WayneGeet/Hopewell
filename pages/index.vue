@@ -33,24 +33,36 @@
         </div>
       </section>
 
-      <section class=" max-w-5xl mx-auto">
+      <section class="max-w-5xl mx-auto px-4 py-8">
         <article class="container">
-            <div class="core-values ">
-              <ul role="list" aria-label="Core Values" class="core-values-list">
-                <li class="visions">
-                  <h2 class="text-xl">Our Core Values</h2>
-                  <p class="text-sm">At Hopewell Haven Centre, our core values guide everything we do. They reflect our commitment to making a positive impact in the lives 
-                    of young mothers and their children.</p>
-                </li>
-                <li v-for="(value, index) in coreValues" :key="index" class="core-value-item auto-cols-fr">
-                  <img :src="value.icon" alt="" class="mx-auto w-8 h-8 mb-2" />
-                  <h3 class="text-base font-semibold">{{ value.value }}</h3>
-                  <p class=" text-sm">{{ value.info }}</p>
-                </li>
-              </ul>
-            </div>
+          <div class="core-values">
+            <ul
+              role="list"
+              aria-label="Core Values"
+              class="core-values-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+            >
+              <li class="visions col-span-full text-center">
+                <h2 class="text-xl font-bold mb-2">Our Core Values</h2>
+                <p class="text-sm">
+                  At Hopewell Haven Centre, our core values guide everything we do.
+                  They reflect our commitment to making a positive impact in the lives 
+                  of young mothers and their children.
+                </p>
+              </li>
+              <li
+                v-for="(value, index) in coreValues"
+                :key="index"
+                class="core-value-item text-center"
+              >
+                <img :src="value.icon" alt="" class="mx-auto w-8 h-8 mb-2" />
+                <h3 class="text-base font-semibold">{{ value.value }}</h3>
+                <p class="text-sm">{{ value.info }}</p>
+              </li>
+            </ul>
+          </div>
         </article>
       </section>
+
 
       <section class="padding-block-large">
         <div class="container">
@@ -102,7 +114,7 @@
       </section>
 
       
-      <section class=" py-20 section-1">
+      <section class="py-20 section-1">
         <div class=" max-w-5xl mx-auto px-4 py-2 ">
           <div>
             <h3 class="faq-head">Have Questions <span class="question-mark"></span></h3>
@@ -130,9 +142,9 @@
       </section>
       
       <section class="cta | bg-accent-400 text-neutral-100 | py-10">
-        <div class="max-w-5xl mx-auto flex items-center justify-between gap-4 md:gap-8 px-2 md:px-8">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-center justify-between gap-4 md:gap-8 px-2 md:px-8">
           <div class="">
-            <div class="flex items-start gap-4">
+            <div class="flex flex-col md:flex-row items-center gap-4">
               <h4 class="text-2xl font-semibold ">Subscribe</h4>  
               <p class="in-block">Joins our journey of supporting teen mothers with care, opportunity, and hope. Get monthly updates, inspiring stories,
                  and ways to make a difference</p>
