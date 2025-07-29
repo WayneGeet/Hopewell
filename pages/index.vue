@@ -221,25 +221,26 @@ const coreValues = ref<CoreValue[]>([
 
 const faqs = ref([
   {
-    question: "When was Haven Hands initiated?",
-    answer: `Haven Hands was founded in July of 2023 with the mission to support, empower, and uplift teen mothers through education, healthcare, and mentorship. 
-    It was founded by Gladys Wamuyu, who has served as a project director at Child of Destiny for more than 20 years, changing and impacting lives.`
+    question: "When was Hopewell Haven Center initiated?",
+    answer: `Hopewell Haven Center was founded in July of 2023 with the mission to support, empower, and uplift teen mothers through education, healthcare, and mentorship. 
+    It was founded by a team of experts experienced in diverse fields and have a desire and passion to see communities transformed.`
   },
   {
-    question: "What services does Haven Hands provide to teen mothers?",
-    answer: "We offer counseling, healthcare access, skill-building workshops, educational support, and safe housing for teen mothers in need."
+    question: "What services does Hopewell Haven Center provide to teen mothers?",
+    answer: `We offer counseling, healthcare access, skill-building workshops, educational support, and safe housing for teen mothers in need. We are engaged in a program with teen mothers
+    and the area of ministry to the mothers is holistic i.e psychological support, life skeletonTitleProps, vocational skills and spiritual mentorship.`
   },
   {
-    question: "How can I support or donate to Haven Hands?",
+    question: "How can I support or donate to Hopewell Haven Center?",
     answer: "You can support us by making a one-time or monthly donation, sponsoring a teen mother, or volunteering your time and skills. Visit our Donate page to learn more."
   },
   {
-    question: "Is Haven Hands a registered non-profit organization?",
-    answer: "Yes, Haven Hands is a fully registered non-profit organization. All contributions are used transparently to directly benefit the mothers we serve."
+    question: "Is Hopewell Haven Center a registered non-profit organization?",
+    answer: "Yes, Hopewell Haven Center is a fully registered non-profit organization. All contributions are used transparently to directly benefit the mothers we serve."
   },
   {
-    question: "Where does Haven Hands operate?",
-    answer: "As of now, Haven Hands does not have a physical office but you can reach us via our email."
+    question: "Where does Hopewell Haven Center operate?",
+    answer: "The offices of Hopewell Haven Center are located in Shabab, Nakuru County, Kenya. We serve teen mothers across five counties: Nakuru, Narok, Laikipia, Nyandarua, and Kericho."
   }
 ])
 
